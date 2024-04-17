@@ -30,7 +30,7 @@ function yesButtonClick() {
   // Save the number of clicks on the "No" button to localStorage
   localStorage.setItem("noButtonClicks", noButtonClicks);
   // Redirect to the next page
-  window.location.href = "thankyou.html";
+  window.location.href = "html/thankyou.html";
   // Optionally, you can reset the counter if needed
   // noButtonClicks = 0;
 }
