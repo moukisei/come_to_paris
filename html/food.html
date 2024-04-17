@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Selection</title>
+    <link rel="stylesheet" href="../css/food.css" />
+  <style>
+    input[type="number"] {
+      padding-left:9px;
+      width: 22px; /* Adjust input width as needed */
+      text-align: center;
+    }
+  </style>
+  </head>
+  <body>
+    <div id="foodquestion">
+      <b>What food should we eat?</b>
+    </div>
+    <b>Please rank these options from most favorite to least favorite (1 to 8)</b>
+    <div>
+
+    <div class="food-selection">
+      <div class="food-item">
+        <img src="../food/burgers.jpeg" alt="Burgers" />
+        <label
+          ><input
+            type="number"
+            id="burger_input"
+            name="food"
+            min="1"
+            max="8"
+          />
+          burgers and fried chicken</label
+        >
+      </div>
+      <div class="food-item">
+        <img src="../food/ramen.jpg" alt="japanese" />
+        <label
+          ><input
+            type="number"
+            id="japanese_input"
+            name="food"
+            min="1"
+            max="8"
+          />
+          japanese food </label
+        >
+      </div>
+      <div class="food-item">
+        <img src="../food/koreanfood.jpeg" alt="koreanfood" />
+        <label
+          ><input
+            type="number"
+            id="korean_input"
+            name="food"
+            min="1"
+            max="8"
+          /> korean food</label
+        >
+      </div>
+      <div class="food-item">
+        <img src="../food/italian.png" alt="italian" />
+        <label><input
+            type="number"
+            id="italian_input"
+            name="food"
+            min="1"
+            max="8"
+          /> italian food</label>
+      </div>
+      <div class="food-item">
+        <img src="../food/yemeni.png" alt="yemeni" />
+        <label><input
+            type="number"
+            id="yemeni_input"
+            name="food"
+            min="1"
+            max="8"
+          /> yemeni food</label>
+      </div>
+      <div class="food-item">
+        <img src="../food/mexican.jpg" alt="mexican" />
+        <label><input
+            type="number"
+            id="mexican_input"
+            name="food"
+            min="1"
+            max="8"
+          /> mexican food</label>
+      </div>
+      <div class="food-item">
+        <img src="../food/ethiopian.jpg" alt="ethiopian" />
+        <label><input
+            type="number"
+            id="ethiopian_input"
+            name="food"
+            min="1"
+            max="8"
+          /> ethiopian food</label>
+      </div>
+      <div class="food-item">
+        <img src="../food/chinese.jpg" alt="chinese" />
+        <label><input
+            type="number"
+            id="chinese_input"
+            name="food"
+            min="1"
+            max="8"
+          /> chinese food</label>
+      </div>
+    </div>
+    <button class="button" id="continueButton">
+      Continue
+    </button>
+  <script src="../js/food.js"></script>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activity Selection</title>
+    <link rel="stylesheet" href="../css/activities.css" />
+  <style>
+    input[type="number"] {
+      padding-left:9px;
+      width: 22px; /* Adjust input width as needed */
+      text-align: center;
+    }
+  </style>
+  </head>
+  <body>
+    <div id="activityquestion">
+      <b>What activities should we do?</b>
+    </div>
+    <b>Please rank these options from most favorite to least favorite (1 to 10)</b>
+    <div>
+
+    <div class="activity-selection">
+      <div class="activity-item">
+        <img src="../activities/parks.jpg" alt="parks" />
+        <label
+          ><input
+            type="number"
+            id="parks_input"
+            name="activity"
+            min="1"
+            max="10"
+          />
+          parks</label
+        >
+      </div>
+      <div class="activity-item">
+        <img src="../activities/ceramics.jpg" alt="ceramics" />
+        <label
+          ><input
+            type="number"
+            id="ceramics_input"
+            name="activity"
+            min="1"
+            max="10"
+          />
+          ceramics painting</label
+        >
+      </div>
+      <div class="activity-item">
+        <img src="../activities/cheese.jpg" alt="cheese" />
+        <label
+          ><input
+            type="number"
+            id="cheese_input"
+            name="activity"
+            min="1"
+            max="10"
+          />
+          french cheese tasting</label
+        >
+      </div>
+      <div class="activity-item">
+        <img src="../activities/exhibitions.jpeg" alt="exhibitions" />
+        <label
+          ><input
+            type="number"
+            id="exhibitions_input"
+            name="activity"
+            min="1"
+            max="10"
+          />
+          exhibitions</label
+        >
+      </div>
+      <div class="activity-item">
+        <img src="../activities/movies.jpg" alt="movies" />
+        <label
+          ><input
+            type="number"
+            id="movies_input"
+            name="activity"
+            min="1"
+            max="10"
+          />
+          old movie from our watchlists</label
+        >
+      </div>
+      <div class="activity-item">
+        <img src="../activities/philharmonie.jpg" alt="philharmonie" />
+        <label
+          ><input
+            type="number"
+            id="philharmonie_input"
+            name="activity"
+            min="1"
+            max="10"
+          />
+          paris philharmonic</label
+        >
+      </div>
+      <div class="activity-item">
+        <img src="../activities/rex_studios.jpg" alt="rex" />
+        <label
+          ><input
+            type="number"
+            id="rex_input"
+            name="activity"
+            min="1"
+            max="10"
+          />
+          rex studios</label
+        >
+      </div>
+      <div class="activity-item">
+        <img src="../activities/spa.jpg" alt="spa" />
+        <label
+          ><input
+            type="number"
+            id="spa_input"
+            name="activity"
+            min="1"
+            max="10"
+          />
+          spa day</label
+        >
+      </div>
+      <div class="activity-item">
+        <img src="../activities/crookies.jpg" alt="crookies" />
+        <label
+          ><input
+            type="number"
+            id="crookies_input"
+            name="activity"
+            min="1"
+            max="10"
+          />
+          french dessert tour</label
+        >
+      </div>
+      <div class="activity-item">
+        <img src="../activities/catacombs.jpg" alt="catacombs" />
+        <label
+          ><input
+            type="number"
+            id="catacombs_input"
+            name="activity"
+            min="1"
+            max="10"
+          />
+          paris catacombs</label
+        >
+      </div>
+    </div>
+    <button class="button" id="continueButton" onclick="location.href='food.html'">
+      Now the food...
+    </button>
+    <script src="../js/activities.js"></script>
+  </body>
+</html>

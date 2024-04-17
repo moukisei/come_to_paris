@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date</title>
+  <link rel="stylesheet" href="../css/date.css" />
+  <style>
+    .form-group {
+      margin-top: 20px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .hidden {
+      display: none;
+    }
+    #resultImage {
+      width: 600px; /* Set width as needed */
+      height: auto; /* Maintain aspect ratio */
+    }
+  </style>
+</head>
+<body>
+  <h1 title="choose a date">Wheeeen thooo?</h1>
+  <form class="form-group" id="dateForm">
+    <label for="days">How many days can you stay?</label>
+    <div>
+      <input type="number" id="days" name="days" min="1" required> days
+    </div>
+    <div>
+      <label for="startDate">Starting from (choose a date)</label>
+      <input type="date" id="startDate" name="startDate" required>
+      <button class="button" type="submit">Submit</button>
+    </div>
+  </form>
+
+  <div id="imageContainer" class="hidden">
+    <img src="../main_pics/Coupon.jpg" alt="Image" id="resultImage">
+    <div id="catCaption" class="imageCaption"><b> I need you to like my place and feel safe. Call me whenever!<b></div>
+  </div>
+
+  <button class="button hidden" id="continueButton">Continue</button> <!-- Initially hidden -->
+
+  <script src="../js/date.js"></script>
+</body>
+</html>
