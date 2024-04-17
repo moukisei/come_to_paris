@@ -1,15 +1,15 @@
 var catImages = [
-  { src: "../main_pics/angie.jpg", caption: "<b>Ok if not for me, for Angie please!<b>" },
-  { src: "../main_pics/coco.jpg", caption: "<b>Nooo, for Coco then<b>" },
-  { src: "../main_pics/baby.jpg", caption: "<b>What about Baby????<b>" },
-  { src: "../main_pics/mochi.jpg", caption: "<b>Mochi's my last chance!!<b>" },
-  { src: "../main_pics/becky.jpg", caption: "<b>Don't make me call Becky (haha it's the only Becky I know 😏)<b>" },
+  { src: "main_pics/angie.jpg", caption: "<b>Ok if not for me, for Angie please!<b>" },
+  { src: "main_pics/coco.jpg", caption: "<b>Nooo, for Coco then<b>" },
+  { src: "main_pics/baby.jpg", caption: "<b>What about Baby????<b>" },
+  { src: "main_pics/mochi.jpg", caption: "<b>Mochi's my last chance!!<b>" },
+  { src: "main_pics/becky.jpg", caption: "<b>Don't make me call Becky (haha it's the only Becky I know 😏)<b>" },
 ];
 
 var currentImageIndex = -1;
 var yesButton = document.getElementById("yesButton");
 var noButton = document.getElementById("noButton");
-var initialCatImage = "../main_pics/cat.gif";
+var initialCatImage = "main_pics/cat.gif";
 var noButtonClicks = 0;
 
 function noButtonClick() {
