@@ -11,6 +11,7 @@
     }
     .form-group label {
       display: block;
+      font-weight: bold;
       margin-bottom: 5px;
     }
     .hidden {
@@ -20,6 +21,11 @@
       width: 600px; /* Set width as needed */
       height: auto; /* Maintain aspect ratio */
     }
+    .additional-info {
+      font-weight: bold;
+      font-size: 15px;
+      margin-top: 10px; /* Adjust as needed */
+    }
   </style>
 </head>
 <body>
@@ -27,7 +33,8 @@
   <form class="form-group" id="dateForm">
     <label for="days">How many days can you stay?</label>
     <div>
-      <input type="number" id="days" name="days" min="1" required> days
+      <input type="number" id="days" name="days" min="3" required> days
+      <p class="additional-info">(At least 4 please, I have a lot planned 🙏🏽)</p>
     </div>
     <div>
       <label for="startDate">Starting from (choose a date)</label>
@@ -38,7 +45,7 @@
 
   <div id="imageContainer" class="hidden">
     <img src="../main_pics/Coupon.jpg" alt="Image" id="resultImage">
-    <div id="catCaption" class="imageCaption"><b> I need you to like my place and feel safe. Call me whenever!<b></div>
+    <div id="catCaption" class="imageCaption"><b> Just to look at the place and feel comfortable when you come. Call me whenever!<b></div>
   </div>
 
   <button class="button hidden" id="continueButton">Continue</button> <!-- Initially hidden -->

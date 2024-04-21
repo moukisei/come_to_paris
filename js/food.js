@@ -27,7 +27,7 @@ document.getElementById("continueButton").addEventListener("click", function() {
    }
    else {
      saveInputValues();
-     location.href = 'lastpage.html'; // Navigate to dessert.html
+     location.href = 'lastpage.html'; // Navigate to lastpage.html
    }
 });
 
