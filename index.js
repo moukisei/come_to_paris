@@ -3,7 +3,7 @@ var catImages = [
   { src: "main_pics/coco.jpg", caption: "<b>Nooo, for Coco then<b>" },
   { src: "main_pics/baby.jpg", caption: "<b>What about Baby????<b>" },
   { src: "main_pics/mochi.jpg", caption: "<b>Mochi's my last chance!!<b>" },
-  { src: "main_pics/becky.jpg", caption: "<b>Don't make me call Becky (haha it's the only Becky I know 😏)<b>" },
+  { src: "main_pics/becky.jpg", caption: "<b>Don't make me call Becky (haha it's the only Becky I know, iykyk)<b>" },
 ];
 
 var currentImageIndex = -1;
