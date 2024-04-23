@@ -1,9 +1,8 @@
 import json
-from flask import Flask, jsonify, request
-from flask_cors import CORS
+import os
+from flask import Flask, request, jsonify
 
 app = Flask(__name__)
-CORS(app)
 
 # Endpoint to receive user input and store it
 @app.route('/store_data', methods=['POST'])
@@ -19,8 +18,12 @@ def store_data():
 # Endpoint to retrieve user input
 @app.route('/get_data', methods=['GET'])
 def get_data():
-    # Retrieve data from your storage (e.g., database)
-    data = {"example": "This is the stored data"}
+    file_path = "sara_choices.json"
+    if os.path.exists(file_path):
+        f = open(file_path)
+        data = json.load(f)
+    else:
+        data = {"Data": "Sara has not made choices yet"}
     return jsonify(data), 200
 
 @app.route('/')
