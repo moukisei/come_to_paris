@@ -25,7 +25,7 @@ document.getElementById('submitButton').addEventListener('click', function() {
     // Check if user input exists
     if (userInput) {
         // Send data to Flask API
-        fetch('http://localhost:5000/store_data', {
+        fetch('https://moukisei.pythonanywhere.com/store_data', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
